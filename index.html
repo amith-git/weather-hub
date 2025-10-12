@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="weather-info">
+                <img id="weather-icon" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="weather icon">
+                <h1 id="temperature">--°C</h1>
+                <p id="weather-desc">--</p>
+                <p id="city-name">--</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>Today's Highlights</h2>
+            <div class="highlights-grid">
+                <div class="card">
+                    <h3>Humidity</h3>
+                    <p><span id="humidity">--</span> %</p>
+                </div>
+                <div class="card">
+                    <h3>Wind Speed</h3>
+                    <p><span id="wind-speed">--</span> m/s</p>
+                </div>
+                <div class="card">
+                    <h3>Pressure</h3>
+                    <p><span id="pressure">--</span> hPa</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud Pct</h3>
+                    <p><span id="clouds">--</span> %</p>
+                </div>
+                <div class="card">
+                    <h3>Sunrise</h3>
+                    <p id="sunrise">--</p>
+                </div>
+                <div class="card">
+                    <h3>Sunset</h3>
+                    <p id="sunset">--</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
